@@ -16,10 +16,13 @@ public class DoorInteractable : BaseInteractable
     [Tooltip("One of the two rooms this door connects (using RoomType enum). [Initializes itself from door data].")]
     [SerializeField] private RoomType m_RoomB;
 
-    private void Awake()
+    protected override void Awake()
     {
+        m_BaseInteractableData = m_DoorInteractableData;
         m_RoomA = m_DoorInteractableData.roomA;
         m_RoomB = m_DoorInteractableData.roomB;
+
+        base.Awake();
     }
 
     public Transform GetConnectingRoomSpawnPoint(RoomType currentRoom)
@@ -41,7 +44,35 @@ public class DoorInteractable : BaseInteractable
 
     public override void Interact()
     {
-        Debug.Log("Interacting with door: " + m_DoorInteractableData.interactionText);
+        Debug.Log($"{m_State}");
+        // Check the state of the interactable
+        switch (m_State)
+        {
+            case InteractableState.Locked:
+                foreach (string text in m_LockedInteractionTextList)
+                {
+                    Debug.Log($"{this.gameObject.name}: {text}");
+                    // Tell Input Manager to Switch Input Action to UI, As locked UI will now be displayed
+                    InputManager.Instance.SwitchInputContext(InputContext.UIInteraction);
+                    // Tell UI Interaction Text Controller to display lock text list
+                    UIInteractionTextController.Instance.ShowLines(m_LockedInteractionTextList);
+                }
+                break;
+            case InteractableState.Unlocked:
+                TryEnterRoom();
+                break;
+            default:
+                Debug.LogWarning($"No State Assigned To {this.gameObject.name}");
+                break;
+        }
+
+        // Grab the correct interaction text list based on the state
+        // Ping another script to feed the text to the in game UI
+    }
+
+    private void TryEnterRoom()
+    {
+        //Debug.Log("Interacting with door: " + m_DoorInteractableData.interactionText);
         // Get the active room type (the room the player is in)
         RoomType activeRoom = RoomManager.Instance.GetActiveRoom().GetRoomType();
 
