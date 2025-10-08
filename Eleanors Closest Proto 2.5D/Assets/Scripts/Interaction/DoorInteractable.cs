@@ -51,7 +51,6 @@ public class DoorInteractable : BaseInteractable
             case InteractableState.Locked:
                 foreach (string text in m_LockedInteractionTextList)
                 {
-                    Debug.Log($"{this.gameObject.name}: {text}");
                     // Tell Input Manager to Switch Input Action to UI, As locked UI will now be displayed
                     InputManager.Instance.SwitchInputContext(InputContext.UIInteraction);
                     // Tell UI Interaction Text Controller to display lock text list

@@ -13,7 +13,7 @@ public abstract class BaseInteractable : MonoBehaviour, IInteractable
     [SerializeField] protected Transform m_InteractionZone;
 
     [Tooltip("The radius around this the player must be within to interact with this.")]
-    [SerializeField] protected const float m_InteractionRadius = 0.7f;
+    [SerializeField] protected float m_InteractionRadius = 0.7f;
 
     [Tooltip("The enum of the state of the interactable")]
     [SerializeField] protected InteractableState m_State;

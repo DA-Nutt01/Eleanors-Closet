@@ -52,11 +52,18 @@ public class UIInteractionTextController : MonoBehaviour
         m_Lines = lines;
         m_CurrentIndex = 0;
 
-        // Start the coroutine to display lines
-        if (m_ShowLinesCoroutine != null)
+        // Null check for lines
+        if (m_Lines.Count == 0)
         {
-            StopCoroutine(m_ShowLinesCoroutine);
+            Debug.LogWarning($"Interaction Text list null! Update list in scriptable");
+            return;
         }
+
+        // Start the coroutine to display lines
+            if (m_ShowLinesCoroutine != null)
+            {
+                StopCoroutine(m_ShowLinesCoroutine);
+            }
         m_ShowLinesCoroutine = StartCoroutine(ShowLinesCoroutine());
     }
 

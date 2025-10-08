@@ -9,14 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 152a056e2fac2465f8b1ef42be9d1805, type: 3}
-  m_Name: Door_LivingRoom_BackYard_Data
-  m_EditorClassIdentifier: Assembly-CSharp::DoorInteractableData
-  type: 2
+  m_Script: {fileID: 11500000, guid: c0ab095a8269a449986f0ba8e5caff0c, type: 3}
+  m_Name: LivingRoom_Oven_Data
+  m_EditorClassIdentifier: Assembly-CSharp::EnvInteractableData
+  type: 1
   state: 0
   lockedInteractionTextList:
-  - It's Locked.
-  - Daddy always keeps the key with him
-  unlockedInteractionTextList: []
-  roomA: 1
-  roomB: 6
+  - It won't open for some reason.
+  unlockedInteractionTextList:
+  - Nothing's inside.

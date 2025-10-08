@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 152a056e2fac2465f8b1ef42be9d1805, type: 3}
   m_Name: Door_LivingRoom_FrontYard
   m_EditorClassIdentifier: Assembly-CSharp::DoorInteractableData
-  interactionText: I wonder what's outside
   type: 2
-  state: 1
+  state: 0
+  lockedInteractionTextList:
+  - It's Locked.
+  - Daddy always keeps the key with him.
+  unlockedInteractionTextList: []
   roomA: 1
   roomB: 5

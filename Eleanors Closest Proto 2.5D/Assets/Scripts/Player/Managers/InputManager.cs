@@ -102,16 +102,18 @@ public class InputManager : MonoBehaviour
 
     public void SwitchInputContext(InputContext ctx)
     {
-        // Takces in an Input context enum and switches the action map based on it
+        // Takces in an Input context enum and switches to the given input context
         switch (ctx)
         {
             case InputContext.Gameplay:
                 m_InputActions.FindActionMap("Player").Enable();
                 m_InputActions.FindActionMap("UI").Disable();
+                Debug.Log($"Switch Input Context from UI to Gameplay");
                 break;
             case InputContext.UIInteraction:
                 m_InputActions.FindActionMap("Player").Disable();
                 m_InputActions.FindActionMap("UI").Enable();
+                Debug.Log($"Switch Input Context from Gameplay to UI");
                 break;
             default:
                 Debug.LogWarning($"Input Context Not Found!");
