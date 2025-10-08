@@ -15,12 +15,10 @@ namespace EC
     {
         Locked,
         Unlocked,
-        Interacting,
     }
 
     public enum InteractableType
     {
-        Item,
         Environment,
         Door,
     }
@@ -29,5 +27,11 @@ namespace EC
     {
         Gameplay,
         UIInteraction,
+    }
+
+    public enum ItemType
+    {
+        Key,
+        Consumeable
     }
 }

@@ -4,6 +4,10 @@ using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
 {
+    /* 
+    Single Responsibility: This script is responsible for managing the state machien for the player character
+    */
+
     [Header("Components")]
     [SerializeField] private NavMeshAgent m_Agent;
 
