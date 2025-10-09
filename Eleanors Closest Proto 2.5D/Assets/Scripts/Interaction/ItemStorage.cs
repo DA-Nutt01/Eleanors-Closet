@@ -8,7 +8,7 @@ public class ItemStorage : MonoBehaviour
 
     [Header("Item Configuration"), Space(5)]
     [Tooltip("A ref to a BaseItem object this interactable is storing.Assin in Inspector.")]
-    [SerializeField] private BaseItemData m_StoredItem = null;
+    [SerializeField] private BaseItemData m_StoredItemData = null;
     [Tooltip("A transform where item objects will be displayed in-game when storing an item on this interactable. Assign in Inspector or at run time.")]
     [SerializeField] private Transform m_ItemDisplayPoint;
     private GameObject m_InstancedVisual;
@@ -16,13 +16,13 @@ public class ItemStorage : MonoBehaviour
     private void Start()
     {
         // Instantiate thg item under the display point pos
-        TryDisplayStoredItem();
+        TryInstantiateStoredItem();
     }
 
-    private void TryDisplayStoredItem()
+    private void TryInstantiateStoredItem()
     {
         // Find the item this is storing and display it display point
-        if (m_StoredItem == null) return;
+        if (m_StoredItemData == null) return;
 
         if (m_ItemDisplayPoint == null)
         {
@@ -38,10 +38,10 @@ public class ItemStorage : MonoBehaviour
         }
 
         // Obtain the prefab/visual GameObject from the item data
-        GameObject prefab = m_StoredItem.GetPrefab();
+        GameObject prefab = m_StoredItemData.GetPrefab();
         if (prefab == null)
         {
-            Debug.LogWarning($"[{nameof(ItemStorage)}] Stored item {m_StoredItem.name} has no prefab assigned.");
+            Debug.LogWarning($"[{nameof(ItemStorage)}] Stored item {m_StoredItemData.name} has no prefab assigned.");
             return;
         }
 
@@ -49,5 +49,26 @@ public class ItemStorage : MonoBehaviour
         m_InstancedVisual = Instantiate(prefab, m_ItemDisplayPoint.position, m_ItemDisplayPoint.rotation, m_ItemDisplayPoint);
 
         Debug.Log($"Item Display Complete on {this.gameObject.name}");
+    }
+
+    public void SetStoredItemData(BaseItemData newItem)
+    {
+        m_StoredItemData = newItem;
+        TryInstantiateStoredItem();
+    }
+    
+    public void ClearStoredItemData()
+    {
+        m_StoredItemData = null;
+        if (m_InstancedVisual != null)
+        {
+            Destroy(m_InstancedVisual);
+            m_InstancedVisual = null;
+        }
+    }
+
+    public BaseItemData GetStoredItemData()
+    {
+        return m_StoredItemData;
     }
 }

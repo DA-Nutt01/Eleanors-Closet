@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9511f1ee304d4611a84b1dc747c8d9a, type: 3}
   m_Name: Office_Room_Key
   m_EditorClassIdentifier: Assembly-CSharp::BaseItemData
+  itemName: Office Key
   prefab: {fileID: 8983601999655062160, guid: d8371d891523a40f19d63dc54338e499, type: 3}
   type: 0
   descriptionTextList:

@@ -39,6 +39,7 @@ public class UIInteractionTextController : MonoBehaviour
     {
         // Subscribe to event
         InputManager.Instance.OnUILeftMouseClick += InputManagerOnUILeftMouseClick;
+        HideText();
     }
 
     private void OnDestroy()
@@ -92,7 +93,7 @@ public class UIInteractionTextController : MonoBehaviour
     private void DisplayLine(string line)
     {
         // Implement your logic to display the line on the UI
-        m_InteractionText.gameObject.SetActive(true);
+        ShowText();
         m_InteractionText.text = line;
     }
 
@@ -102,11 +103,24 @@ public class UIInteractionTextController : MonoBehaviour
         m_InteractionText.gameObject.SetActive(false);
     }
 
+    private void ShowText()
+    {
+        m_InteractionText.gameObject.SetActive(true);
+    }
+
     private void InputManagerOnUILeftMouseClick(object sender, EventArgs e)
     {
         // This method will be called when the UI Left Mouse Click event is triggered
         // The coroutine will resume and display the next line
         m_TriggerNextLine = true;
+    }
+
+    public void DisplayItemPickupPrompt(BaseItemData itemData)
+    {
+        // Set Interaction text to "Take {BaseItem.name}?" --> Yes No
+        m_InteractionText.text = $"Take {itemData.name}?";
+        ShowText();
+        // Start Coroutine to wait for response?
     }
 
 }
