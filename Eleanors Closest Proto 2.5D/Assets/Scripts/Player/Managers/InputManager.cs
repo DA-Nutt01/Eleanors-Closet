@@ -16,6 +16,8 @@ public class InputManager : MonoBehaviour
 
     [Tooltip("Enum to track which set of controls are currently active bewteen the player and navigating UI.")]
     [SerializeField] private InputContext m_InputContext = InputContext.Gameplay;
+    [Tooltip("A layer mask to define what colliders are clickable for moving & interacting.")]
+    [SerializeField] private LayerMask m_ClickableLayerMask;
 
     // PLAYER ACTIONS
     private InputAction m_PlayerLeftMouseClick;
@@ -81,7 +83,7 @@ public class InputManager : MonoBehaviour
         RaycastHit hit;
 
         // Check if the ray hit an object 
-        if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, m_ClickableLayerMask))
         {
             //Debug.Log("Hit: " + hit.transform.name); // Verify hit detection
             // Fire the event & send raycasthit as args to listeners

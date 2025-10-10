@@ -63,10 +63,14 @@ public class InventoryManager : MonoBehaviour
         else if (m_StoredItemData != null)
         {
             // Player has an item already in hand, swap items from hand to storageFrom
-            Debug.Log($"Player swapping {m_StoredItemData.name} with {storageFrom.gameObject.name}'s {itemToGrab.name}");
+            //Debug.Log($"Player swapping {m_StoredItemData.name} with {storageFrom.gameObject.name}'s {itemToGrab.name}");
             BaseItemData currentItem = m_StoredItemData;
+            // Move item from storage to player
             m_StoredItemData = storageFrom.GetStoredItemData();
+            // Move item from player to storage
             storageFrom.SetStoredItemData(currentItem);
+            // Refresh Inventory UI
+            UIInventoryManager.Instance.RefreshInventoryText();
         }
     }
     

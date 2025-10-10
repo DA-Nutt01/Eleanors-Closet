@@ -134,7 +134,7 @@ public class UIInteractionTextController : MonoBehaviour
     public void ShowItemPickupPrompt(BaseItemData itemData, ItemStorage storageFrom)
     {
         // Update pickup prompt text
-        m_ItemPickupPromptText.text = $"Take {itemData.name}?";
+        m_ItemPickupPromptText.text = $"Take {itemData.GetName()}?";
         // Toggle pickup prompt menu on
         m_ItemPickupPromptPanel.SetActive(true);
 
