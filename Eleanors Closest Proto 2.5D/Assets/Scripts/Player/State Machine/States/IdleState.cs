@@ -16,7 +16,7 @@ public class IdleState : IPlayerState
         // code that runs when we first enter the state
 
         // Subscribe to Input Manager Left click event
-        InputManager.Instance.OnLeftMouseClick += InputManager_OnLeftMouseClick;
+        InputManager.Instance.OnPlayerLeftMouseClick += InputManager_OnLeftMouseClick;
 
         Debug.Log("Entering Idle State");
     }
@@ -52,7 +52,7 @@ public class IdleState : IPlayerState
         // code that runs when we exit the state
 
         // Unsubscribe from events
-        InputManager.Instance.OnLeftMouseClick -= InputManager_OnLeftMouseClick;
+        InputManager.Instance.OnPlayerLeftMouseClick -= InputManager_OnLeftMouseClick;
         Debug.Log("Exiting Idle State");
     }
 }

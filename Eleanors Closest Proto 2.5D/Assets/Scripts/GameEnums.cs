@@ -10,4 +10,28 @@ namespace EC
         FrontYard,
         BackyYard,
     }
+
+    public enum InteractableState
+    {
+        Locked,
+        Unlocked,
+    }
+
+    public enum InteractableType
+    {
+        Environment,
+        Door,
+    }
+
+    public enum InputContext
+    {
+        Gameplay,
+        UIInteraction,
+    }
+
+    public enum ItemType
+    {
+        Key,
+        Consumeable
+    }
 }

@@ -20,7 +20,7 @@ public class InteractableSelectedState : IPlayerState
         // code that runs when we first enter the state
         Debug.Log($"Interactable Selected: {m_TargetInteractable}");
         // Subscribe to left click event
-        InputManager.Instance.OnLeftMouseClick += InputManager_OnLeftMouseClick;
+        InputManager.Instance.OnPlayerLeftMouseClick += InputManager_OnLeftMouseClick;
 
         // Player sets destination to target interaractbles interaction zone
         SetTargetInteractable(m_TargetInteractable);
@@ -37,7 +37,7 @@ public class InteractableSelectedState : IPlayerState
 
         foreach (Collider collider in colliderArray)
         {
-            Debug.Log($"Collider in collider array: {collider.gameObject.name}");
+            //Debug.Log($"Collider in collider array: {collider.gameObject.name}");
 
             // Check if found collider has Player Controller component and is therefore the player
             if (collider.TryGetComponent(out PlayerController playerController))
@@ -96,7 +96,7 @@ public class InteractableSelectedState : IPlayerState
         m_PlayerAgent.ResetPath();
         m_PlayerAgent.velocity = Vector3.zero;
 
-        InputManager.Instance.OnLeftMouseClick -= InputManager_OnLeftMouseClick;
+        InputManager.Instance.OnPlayerLeftMouseClick -= InputManager_OnLeftMouseClick;
 
         Debug.Log("Exiting Interactable Selected State");
     }

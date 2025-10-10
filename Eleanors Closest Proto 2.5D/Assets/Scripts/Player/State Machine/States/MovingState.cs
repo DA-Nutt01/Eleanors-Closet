@@ -25,7 +25,7 @@ public class MovingState : IPlayerState
         Debug.Log("Entering Moving State");
 
         // Subscribe to Input Manager Left click event
-        InputManager.Instance.OnLeftMouseClick += InputManager_OnLeftMouseClick;
+        InputManager.Instance.OnPlayerLeftMouseClick += InputManager_OnLeftMouseClick;
 
         // Set the destination
         m_PlayerAgent.isStopped = false;
@@ -76,7 +76,7 @@ public class MovingState : IPlayerState
         m_PlayerAgent.velocity = Vector3.zero;
 
         // Unsubscribe from events
-        InputManager.Instance.OnLeftMouseClick -= InputManager_OnLeftMouseClick;
+        InputManager.Instance.OnPlayerLeftMouseClick -= InputManager_OnLeftMouseClick;
         Debug.Log("Exiting Moving State");
     }
 

@@ -1,26 +1,36 @@
+using System.Collections.Generic;
 using UnityEngine;
+using EC;
 
 public class BaseInteractableData : ScriptableObject
 {
     // DO NOT INSTANTIATE
     // ALL Interactable scriptables inherit from this base one
-    private enum InteractableType
-    {
-        Item,
-        Environment,
-        Door,
-    }
-
-    private enum InteractableState
-    {
-        Locked,
-        Unlocked,
-    }
 
     [Header("Base Interactable Configuration"), Space(5)]
-    public string interactionText;
-    [SerializeField] private InteractableType type;
+    [Tooltip("The type of interactable this is.")]
+    [SerializeField] protected InteractableType type;
+    [Tooltip("The state of this interactable. Determines the interaction text while interacting"), Space(5)]
+    [SerializeField] protected InteractableState state;
 
-    [SerializeField] private InteractableState state;
+    [Tooltip("A list of text during interation while the interactable state is locked.")]
+    [SerializeField] protected List<string> lockedInteractionTextList = new List<string>();
 
+    [Tooltip("A list of text during interation while the interactable state is unlocked.")]
+    [SerializeField] protected List<string> unlockedInteractionTextList = new List<string>();
+
+    public List<string> GetLockedInteractionTextList()
+    {
+        return lockedInteractionTextList;
+    }
+
+    public List<string> GetUnlockedInteractionTextList()
+    {
+        return unlockedInteractionTextList;
+    }
+
+    public InteractableState GetState()
+    {
+        return state;
+    }
 }

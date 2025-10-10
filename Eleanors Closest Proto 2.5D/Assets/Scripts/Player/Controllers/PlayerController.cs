@@ -1,13 +1,13 @@
-using System;
-using System.Xml.Serialization;
-using Unity.VisualScripting;
-using UnityEditor.EditorTools;
 using UnityEngine;
 using UnityEngine.AI;
 
 
 public class PlayerController : MonoBehaviour
 {
+    /* 
+    Single Responsibility: This script is responsible for managing the state machien for the player character
+    */
+
     [Header("Components")]
     [SerializeField] private NavMeshAgent m_Agent;
 
