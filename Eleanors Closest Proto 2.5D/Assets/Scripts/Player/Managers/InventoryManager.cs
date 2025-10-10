@@ -31,14 +31,20 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    private void TryTakeItemFromStorage(BaseItemData newItem, ItemStorage storageFrom)
+    public void TryTakeItemFromStorage(BaseItemData itemToGrab, ItemStorage storageFrom)
     {
         // Takes in an itemdata to set, and the ItemStorage its getting it from.
         // Sets that itemdata to storedItem
         // Null check newItem
-        if (newItem == null)
+        if (itemToGrab == null)
         {
-            Debug.LogWarning($"{storageFrom.gameObject.name} has not item to take.");
+            Debug.LogError($"ItemToGrab is missing.");
+            return;
+        }
+
+        if (storageFrom == null)
+        {
+            Debug.LogError($"ItemStorage component is missing.");
             return;
         }
 
@@ -46,17 +52,18 @@ public class InventoryManager : MonoBehaviour
         if (m_StoredItemData == null)
         {
             // Player inventory is empty, Set item to storedItem and Clear item in storageFrom
-            Debug.Log($"Player taking {newItem.name} from {storageFrom.gameObject.name}");
+            Debug.Log($"Player taking {itemToGrab.name} from {storageFrom.gameObject.name}");
             // Set stored item for inventory
-            m_StoredItemData = newItem;
+            m_StoredItemData = itemToGrab;
             // Clear item from interactable
             storageFrom.ClearStoredItemData();
-            // Update interactable's state to Unlocked
+            // Tell UIInventoryManager to update inventory text
+            UIInventoryManager.Instance.RefreshInventoryText();
         }
         else if (m_StoredItemData != null)
         {
             // Player has an item already in hand, swap items from hand to storageFrom
-            Debug.Log($"Player swapping {m_StoredItemData.name} with {storageFrom.gameObject.name}'s {newItem.name}");
+            Debug.Log($"Player swapping {m_StoredItemData.name} with {storageFrom.gameObject.name}'s {itemToGrab.name}");
             BaseItemData currentItem = m_StoredItemData;
             m_StoredItemData = storageFrom.GetStoredItemData();
             storageFrom.SetStoredItemData(currentItem);

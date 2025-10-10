@@ -1,0 +1,20 @@
+{
+    "asset": "902933e078f914911a880d42809ccbbb",
+    "fileName": "0199ca24-d514-7b72-8bf0-cb54460c3c2f.png",
+    "prompt": "Create a sprite of a 8 year-old African American girl wearing a blue nightgown in a parchment, fairy tale style",
+    "negativePrompt": "",
+    "model": "94c4260f-b988-40e7-b3d3-435b9f449bd0",
+    "modelName": "Flux.1 Dev",
+    "customSeed": -1,
+    "w3CTraceId": "10d41556bc0f03562b02fcef3941ed76",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}

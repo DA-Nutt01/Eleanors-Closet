@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using TMPro;
 using EC;
 using System;
@@ -14,8 +15,21 @@ public class UIInteractionTextController : MonoBehaviour
     private List<string> m_Lines;
     private int m_CurrentIndex;
     private bool m_TriggerNextLine = false;
-     private Coroutine m_ShowLinesCoroutine;
+    private Coroutine m_ShowLinesCoroutine;
+
+    [Header("Components"), Space(5)]
+    [Tooltip("A ref to the text object that displays interaction text.")]
     [SerializeField] private TextMeshProUGUI m_InteractionText;
+    [Tooltip("A ref to the the parent GameObject of the pickup prompt and buttons.")]
+    [SerializeField] private GameObject m_ItemPickupPromptPanel;
+    [Tooltip("A ref to the text object that displays item pickup prompts.")]
+    [SerializeField] private TextMeshProUGUI m_ItemPickupPromptText;
+    [Tooltip("A ref to the yes button in the item pickup prompt menu.")]
+    [SerializeField] private Button m_YesButton;
+    [Tooltip("A ref to the no button in the item pickup prompt menu.")]
+    [SerializeField] private Button m_NoButton;
+
+
 
 
     private void Awake()
@@ -39,6 +53,8 @@ public class UIInteractionTextController : MonoBehaviour
     {
         // Subscribe to event
         InputManager.Instance.OnUILeftMouseClick += InputManagerOnUILeftMouseClick;
+
+        HideItemPickupPrompt();
         HideText();
     }
 
@@ -114,13 +130,44 @@ public class UIInteractionTextController : MonoBehaviour
         // The coroutine will resume and display the next line
         m_TriggerNextLine = true;
     }
-
-    public void DisplayItemPickupPrompt(BaseItemData itemData)
+   
+    public void ShowItemPickupPrompt(BaseItemData itemData, ItemStorage storageFrom)
     {
-        // Set Interaction text to "Take {BaseItem.name}?" --> Yes No
-        m_InteractionText.text = $"Take {itemData.name}?";
-        ShowText();
-        // Start Coroutine to wait for response?
+        // Update pickup prompt text
+        m_ItemPickupPromptText.text = $"Take {itemData.name}?";
+        // Toggle pickup prompt menu on
+        m_ItemPickupPromptPanel.SetActive(true);
+
+        // Clear button listeners to avoid stacking
+        m_YesButton.onClick.RemoveAllListeners();
+        m_NoButton.onClick.RemoveAllListeners();
+
+        // Add new listener to yes button (Trying Lambda function/Anonymous function syntax here)
+        m_YesButton.onClick.AddListener(() =>
+        {
+            // Yes Button is clicked
+            // Try to pick up item from ItemStorage
+            InventoryManager.Instance.TryTakeItemFromStorage(itemData, storageFrom);
+            //Hide UI
+            HideItemPickupPrompt();
+            // Tell Input Manager to switch to Gameplay Input Context
+            InputManager.Instance.SwitchInputContext(InputContext.Gameplay);
+        });
+
+        // Add new listner to no button
+        m_NoButton.onClick.AddListener(() =>
+        {
+            // No Button is clicked
+            //Hide UI
+            HideItemPickupPrompt();
+            // Tell Input Manager to switch to Gameplay Input Context
+            InputManager.Instance.SwitchInputContext(InputContext.Gameplay);
+        });
+    }
+
+    private void HideItemPickupPrompt()
+    {
+        m_ItemPickupPromptPanel.SetActive(false);
     }
 
 }

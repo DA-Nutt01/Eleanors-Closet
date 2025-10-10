@@ -31,10 +31,10 @@ public class UIInventoryManager : MonoBehaviour
 
     private void Start()
     {
-        SetInventoryText();
+        RefreshInventoryText();
     }
 
-    private void SetInventoryText()
+    public void RefreshInventoryText()
     {
         if (InventoryManager.Instance.GetStoredItemData() == null)
         {

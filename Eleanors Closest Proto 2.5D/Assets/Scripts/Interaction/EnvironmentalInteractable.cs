@@ -12,6 +12,7 @@ public class EnvironmentalInteractable : BaseInteractable
     protected override void Awake()
     {
         m_BaseInteractableData = m_EnvInteractableData;
+        m_ItemStorageComponent = GetComponent<ItemStorage>();
         base.Awake();
     }
     public override void Interact()
@@ -49,7 +50,7 @@ public class EnvironmentalInteractable : BaseInteractable
         // Tell Input Manager to Switch Input Action to UI, As locked UI will now be displayed
         InputManager.Instance.SwitchInputContext(InputContext.UIInteraction);
         // Tell UI Interaction Text Controller to prompt user to pick up item
-        UIInteractionTextController.Instance.DisplayItemPickupPrompt(itemData);
+        UIInteractionTextController.Instance.ShowItemPickupPrompt(itemData, m_ItemStorageComponent);
     }
     
     private void HandleInteractionByState()
