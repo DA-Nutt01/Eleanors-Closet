@@ -9,9 +9,13 @@ public class BaseInteractableData : ScriptableObject
 
     [Header("Base Interactable Configuration"), Space(5)]
     [Tooltip("The type of interactable this is.")]
+    [SerializeField] protected string interactableName;
+    [Tooltip("The type of interactable this is.")]
     [SerializeField] protected InteractableType type;
     [Tooltip("The state of this interactable. Determines the interaction text while interacting"), Space(5)]
     [SerializeField] protected InteractableState state;
+    [Tooltip("A ref to a BaseItemData this interactable needs to be unlocked.")]
+    [SerializeField] protected BaseItemData keyItem;
 
     [Tooltip("A list of text during interation while the interactable state is locked.")]
     [SerializeField] protected List<string> lockedInteractionTextList = new List<string>();
@@ -32,5 +36,15 @@ public class BaseInteractableData : ScriptableObject
     public InteractableState GetState()
     {
         return state;
+    }
+
+    public BaseItemData GetKeyItem()
+    {
+        return keyItem;
+    }
+
+    public string GetName()
+    {
+        return interactableName;
     }
 }

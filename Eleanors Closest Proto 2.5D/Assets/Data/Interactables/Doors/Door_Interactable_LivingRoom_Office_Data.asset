@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 152a056e2fac2465f8b1ef42be9d1805, type: 3}
   m_Name: Door_Interactable_LivingRoom_Office_Data
   m_EditorClassIdentifier: Assembly-CSharp::DoorData
-  type: 2
-  state: 1
+  interactableName: Office Door
+  type: 1
+  state: 0
+  keyItem: {fileID: 11400000, guid: 87f5cc574aa434ee587bad023f3f2608, type: 2}
   lockedInteractionTextList:
   - It's Locked.
   - The key has to be somewhere...

@@ -36,15 +36,17 @@ public class UIInventoryManager : MonoBehaviour
 
     public void RefreshInventoryText()
     {
-        if (InventoryManager.Instance.GetStoredItemData() == null)
+        if (InventoryManager.Instance.TryGetStoredItemData(out BaseItemData itemData))
+        {
+            // Iventory is not empty, set text to item name
+            m_InventoryText.text = itemData.GetName();
+        }
+        else
         {
             // Inventory is empty
             m_InventoryText.text = "Empty";
             return;
         }
-
-        string text = InventoryManager.Instance.GetStoredItemData().GetName();
-        m_InventoryText.text = text;
     }
 
 }

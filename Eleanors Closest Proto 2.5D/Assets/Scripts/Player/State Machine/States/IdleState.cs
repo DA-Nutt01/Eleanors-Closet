@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using EC;
 public class IdleState : IPlayerState
 {
 
@@ -15,8 +16,9 @@ public class IdleState : IPlayerState
     {
         // code that runs when we first enter the state
 
-        // Subscribe to Input Manager Left click event
+        // Subscribe to Input Manager Left  & Right click event
         InputManager.Instance.OnPlayerLeftMouseClick += InputManager_OnLeftMouseClick;
+        InputManager.Instance.OnPlayerRightMouseClick += InputManager_OnRightMouseClick;
 
         Debug.Log("Entering Idle State");
     }
@@ -28,16 +30,25 @@ public class IdleState : IPlayerState
         // If the object is an interactable, change state
         if (interactable != null)
         {
-            m_PlayerController.m_PlayerStateMachine.TryTransitionToState(new InteractableSelectedState(m_PlayerController, interactable));
+            m_PlayerController.m_PlayerStateMachine.TryTransitionToState(new InteractableSelectedState(m_PlayerController, interactable, ClickType.LeftClick));
         }
         else
         {
             // If raycast did not hit an interactable, simply move the player to the position
             // Cache the coords of the ray
             Vector3 targetDestination = args.Hit.point;
-
             // Transition to moving state
             m_PlayerController.m_PlayerStateMachine.TryTransitionToState(new MovingState(m_PlayerController, targetDestination));
+        }
+    }
+
+    private void InputManager_OnRightMouseClick(object sender, RaycastHitEventArgs args)
+    {
+        BaseInteractable interactable = args.Hit.collider.GetComponentInParent<BaseInteractable>();
+
+         if (interactable != null)
+        {
+            m_PlayerController.m_PlayerStateMachine.TryTransitionToState(new InteractableSelectedState(m_PlayerController, interactable, ClickType.RightClick));
         }
     }
 
@@ -53,6 +64,7 @@ public class IdleState : IPlayerState
 
         // Unsubscribe from events
         InputManager.Instance.OnPlayerLeftMouseClick -= InputManager_OnLeftMouseClick;
+        InputManager.Instance.OnPlayerRightMouseClick -= InputManager_OnRightMouseClick;
         Debug.Log("Exiting Idle State");
     }
 }

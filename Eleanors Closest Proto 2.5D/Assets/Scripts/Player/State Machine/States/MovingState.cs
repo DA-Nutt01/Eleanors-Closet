@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using EC;
 
 public class MovingState : IPlayerState
 {
@@ -26,6 +27,7 @@ public class MovingState : IPlayerState
 
         // Subscribe to Input Manager Left click event
         InputManager.Instance.OnPlayerLeftMouseClick += InputManager_OnLeftMouseClick;
+        InputManager.Instance.OnPlayerRightMouseClick += InputManager_OnRightClick;
 
         // Set the destination
         m_PlayerAgent.isStopped = false;
@@ -77,6 +79,7 @@ public class MovingState : IPlayerState
 
         // Unsubscribe from events
         InputManager.Instance.OnPlayerLeftMouseClick -= InputManager_OnLeftMouseClick;
+        InputManager.Instance.OnPlayerRightMouseClick -= InputManager_OnRightClick;
         Debug.Log("Exiting Moving State");
     }
 
@@ -87,17 +90,27 @@ public class MovingState : IPlayerState
         // If the object is an interactable, change state
         if (interactable != null)
         {
-            m_PlayerController.m_PlayerStateMachine.TryTransitionToState(new InteractableSelectedState(m_PlayerController, interactable));
+            m_PlayerController.m_PlayerStateMachine.TryTransitionToState(new InteractableSelectedState(m_PlayerController, interactable, ClickType.LeftClick));
         }
         else
         {
             // If raycast did not hit an interactable, simply move the player to the position
-
             // Update & Set new destination 
             m_Destination = args.Hit.point;
             m_PlayerAgent.SetDestination(m_Destination);
             Debug.Log($"[Moving State] Updating Destination to {m_Destination}");
-            
+
+        }
+    }
+    
+    private void InputManager_OnRightClick(object sender, RaycastHitEventArgs args)
+    {
+        BaseInteractable interactable = args.Hit.collider.GetComponentInParent<BaseInteractable>();
+
+        // If the object is an interactable, change state
+        if (interactable != null)
+        {
+            m_PlayerController.m_PlayerStateMachine.TryTransitionToState(new InteractableSelectedState(m_PlayerController, interactable, ClickType.RightClick));
         }
     }
 }

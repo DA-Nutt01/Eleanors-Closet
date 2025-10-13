@@ -18,16 +18,23 @@ public class InputManager : MonoBehaviour
     [SerializeField] private InputContext m_InputContext = InputContext.Gameplay;
     [Tooltip("A layer mask to define what colliders are clickable for moving & interacting.")]
     [SerializeField] private LayerMask m_ClickableLayerMask;
+    [Tooltip("A layer mask to define what colliders are interactable for interacting & using items.")]
+    [SerializeField] private LayerMask m_InteractableLayerMask;
 
     // PLAYER ACTIONS
     private InputAction m_PlayerLeftMouseClick;
+    private InputAction m_PlayerRightMouseClick;
+
 
     // UI Actions
     private InputAction m_UILeftMouseClick;
 
-    // EVENTS
+    // PLAYER EVENTS
     public event EventHandler<RaycastHitEventArgs> OnPlayerLeftMouseClick;
+    public event EventHandler<RaycastHitEventArgs> OnPlayerRightMouseClick;
+    // UI EVENTS
     public event EventHandler OnUILeftMouseClick;
+    
 
     private void OnEnable()
     {
@@ -65,6 +72,9 @@ public class InputManager : MonoBehaviour
         if (m_PlayerLeftMouseClick == null) m_PlayerLeftMouseClick = m_InputActions.FindAction("Player/LeftMouseClick");
         if (m_PlayerLeftMouseClick != null) m_PlayerLeftMouseClick.performed += OnPlayerLeftMouseClickPerformed;
 
+        if (m_PlayerRightMouseClick == null) m_PlayerRightMouseClick = m_InputActions.FindAction("Player/RightMouseClick");
+        if (m_PlayerRightMouseClick != null) m_PlayerRightMouseClick.performed += OnPlayerRightMouseClickPerformed;
+
         // Initialize UI Actions
         if (m_UILeftMouseClick == null) m_UILeftMouseClick = m_InputActions.FindAction("UI/LeftMouseClick");
         if (m_UILeftMouseClick != null) m_UILeftMouseClick.performed += OnUILeftMouseClickPerformed;
@@ -73,25 +83,21 @@ public class InputManager : MonoBehaviour
 
     private void OnPlayerLeftMouseClickPerformed(InputAction.CallbackContext cxt)
     {
-        // Cache the mouses current pos
-        Vector3 screenPos = Mouse.current.position.ReadValue();
-
-        // Shoot a ray at the mouse pos
-        Ray ray = m_ActiveCamera.ScreenPointToRay(screenPos);
-
-        // Cache the raycasthit
-        RaycastHit hit;
-
-        // Check if the ray hit an object 
-        if (Physics.Raycast(ray, out hit, Mathf.Infinity, m_ClickableLayerMask))
+        // Try to get a raycast hit from the mouse
+        if (TryGetRaycastHitOnLayerMask(m_ClickableLayerMask, out RaycastHit hit))
         {
-            //Debug.Log("Hit: " + hit.transform.name); // Verify hit detection
-            // Fire the event & send raycasthit as args to listeners
+            // If it gets a hit, invoke the event with those raycast event args
             OnPlayerLeftMouseClick?.Invoke(this, new RaycastHitEventArgs(hit));
         }
-        else
+    }
+
+    private void OnPlayerRightMouseClickPerformed(InputAction.CallbackContext cxt)
+    {
+        if (TryGetRaycastHitOnLayerMask(m_InteractableLayerMask, out RaycastHit hit))
         {
-            Debug.Log("No hit detected.");
+            //Debug.Log("Interacrtable Clicked!");
+            // If the ray gets a hit, invoke the event with the args
+            OnPlayerRightMouseClick?.Invoke(this, new RaycastHitEventArgs(hit));
         }
     }
 
@@ -120,6 +126,27 @@ public class InputManager : MonoBehaviour
             default:
                 Debug.LogWarning($"Input Context Not Found!");
                 break;
+        }
+    }
+
+    private bool TryGetRaycastHitOnLayerMask(LayerMask layerMask, out RaycastHit hit)
+    {
+         // Cache the mouses current pos
+        Vector3 screenPos = Mouse.current.position.ReadValue();
+
+        // Shoot a ray at the mouse pos
+        Ray ray = m_ActiveCamera.ScreenPointToRay(screenPos);
+
+        // Check if the ray hit an object 
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
+        {
+            //Debug.Log("Hit: " + hit.transform.name); // Verify hit detection
+            return true;
+        }
+        else
+        {
+            //Debug.Log("No hit detected.");
+            return false;
         }
     }
 }

@@ -74,9 +74,16 @@ public class InventoryManager : MonoBehaviour
         }
     }
     
-    public BaseItemData GetStoredItemData()
+    public bool TryGetStoredItemData(out BaseItemData storedItemData)
     {
-        return m_StoredItemData;
+        if (m_StoredItemData != null)
+        {
+            storedItemData = m_StoredItemData;
+            return true;
+        }
+
+        storedItemData = null;
+        return false;
     }
     
 }

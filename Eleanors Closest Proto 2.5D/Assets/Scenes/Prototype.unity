@@ -306,7 +306,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 38999735}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Interaction_Zone
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -342,7 +342,7 @@ GameObject:
   - component: {fileID: 39118631}
   - component: {fileID: 39118630}
   - component: {fileID: 39118629}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Doorframe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2956,7 +2956,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 138465147}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Interaction_Zone
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -3114,7 +3114,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 142932401}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Interaction_Zone
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -3145,7 +3145,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 154536949}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Interaction_Zone
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -3176,7 +3176,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 154930896}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Interaction_Zone
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -3207,7 +3207,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 159334888}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Interaction  Zone A
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -4490,7 +4490,7 @@ GameObject:
   - component: {fileID: 194102294}
   - component: {fileID: 194102301}
   - component: {fileID: 194102302}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Countertop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4864,6 +4864,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 376165432}
   m_InteractionRadius: 0.5
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: 99f72ff04772e4c19aa73ee381cb6e01, type: 2}
@@ -5075,7 +5076,7 @@ GameObject:
   - component: {fileID: 200492852}
   - component: {fileID: 200492851}
   - component: {fileID: 200492857}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Desk_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5448,6 +5449,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 154536949}
   m_InteractionRadius: 0.7
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: bfc6f5fb284a140d29a6ccd0d7455f8f, type: 2}
@@ -6563,7 +6565,7 @@ GameObject:
   - component: {fileID: 276815735}
   - component: {fileID: 276815734}
   - component: {fileID: 276815733}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: 'Doorframe '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7136,7 +7138,7 @@ GameObject:
   m_Component:
   - component: {fileID: 291111236}
   - component: {fileID: 291111237}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Door_LivingRoom_Bedroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7174,6 +7176,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 1047412539}
   m_InteractionRadius: 0.5
   m_State: 1
+  m_KeyItem: {fileID: 11400000, guid: 738b91279d6ff4ff3897960cadadbea3, type: 2}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_DoorInteractableData: {fileID: 11400000, guid: 20515976156084c5f8aa81847eec3044, type: 2}
@@ -7695,8 +7698,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.19555601, y: -0.6730079, z: 0.19154035, w: 0.6871176}
-  m_LocalPosition: {x: 7.216497, y: 4.0791554, z: -2.4666286}
+  m_LocalRotation: {x: 0.07982432, y: -0.69535196, z: 0.07818513, w: 0.7099302}
+  m_LocalPosition: {x: 7.216497, y: 1.5, z: -2.4666286}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7787,7 +7790,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 345870481}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7807,7 +7810,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 693429573}
   - {fileID: 1666679299}
   m_Father: {fileID: 974489598}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8050,7 +8052,7 @@ GameObject:
   - component: {fileID: 350742923}
   - component: {fileID: 350742922}
   - component: {fileID: 350742929}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wardrobe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8423,6 +8425,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 490410446}
   m_InteractionRadius: 4
   m_State: 0
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: adc163313e9204ee0b8402ed2e217e01, type: 2}
@@ -8657,7 +8660,7 @@ GameObject:
   - component: {fileID: 368500318}
   - component: {fileID: 368500317}
   - component: {fileID: 368500323}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Nightstand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9030,6 +9033,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 1820226064}
   m_InteractionRadius: 0.7
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: 5758b10f3ec7a4714bdcca29cf0ccdd7, type: 2}
@@ -9042,7 +9046,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 376165432}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Interaction_Zone
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -9251,7 +9255,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 378932332}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Doors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9648,7 +9652,7 @@ GameObject:
   - component: {fileID: 402831015}
   - component: {fileID: 402831014}
   - component: {fileID: 402831013}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Doorframe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10220,7 +10224,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 405644590}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: InteractionZone
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -10514,7 +10518,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 422117982}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Item_Display_Point
   m_TagString: Untagged
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
@@ -10905,7 +10909,7 @@ GameObject:
   - component: {fileID: 455010241}
   - component: {fileID: 455010240}
   - component: {fileID: 455010239}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Jug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11260,7 +11264,7 @@ GameObject:
   - component: {fileID: 457821713}
   - component: {fileID: 457821712}
   - component: {fileID: 457821711}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Door Handle A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20450,7 +20454,7 @@ GameObject:
   - component: {fileID: 468841383}
   - component: {fileID: 468841382}
   - component: {fileID: 468841381}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Door Handle A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29102,7 +29106,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 474385640}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Interaction  Zone B
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -29138,7 +29142,7 @@ GameObject:
   - component: {fileID: 484646874}
   - component: {fileID: 484646873}
   - component: {fileID: 484646872}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Door Handle A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37790,7 +37794,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 490410446}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 'Interaction_Zone '
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -37999,7 +38003,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 503373611}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Interaction_Zone
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -38480,6 +38484,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 664123171}
+  - {fileID: 620712228}
   - {fileID: 2096804816}
   - {fileID: 1511712892}
   m_Father: {fileID: 354233426}
@@ -38862,7 +38867,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 530129216}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Interaction_Zone
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -38893,7 +38898,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 530653145}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Interaction  Zone B
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -39052,7 +39057,7 @@ GameObject:
   - component: {fileID: 537734712}
   - component: {fileID: 537734711}
   - component: {fileID: 537734717}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Desk_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39425,6 +39430,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 789107438}
   m_InteractionRadius: 0.7
   m_State: 0
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: 49b416090fdb54f0082946bc32da2bfe, type: 2}
@@ -39799,7 +39805,7 @@ GameObject:
   - component: {fileID: 552776549}
   - component: {fileID: 552776548}
   - component: {fileID: 552776555}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Chair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40172,6 +40178,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 1634667344}
   m_InteractionRadius: 0.7
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: 35ad8f99cc2494f53a0da1a5d0fe8c3d, type: 2}
@@ -40828,7 +40835,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 558069925}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Interaction_Zone
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -40866,7 +40873,7 @@ GameObject:
   - component: {fileID: 559326661}
   - component: {fileID: 559326660}
   - component: {fileID: 559326666}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Chair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41239,6 +41246,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 1371321766}
   m_InteractionRadius: 0.7
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: 35ad8f99cc2494f53a0da1a5d0fe8c3d, type: 2}
@@ -41251,7 +41259,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 571631168}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Interaction Zone B
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -41941,7 +41949,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 620712227}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -41951,7 +41959,7 @@ Transform:
   - {fileID: 1420522822}
   - {fileID: 1275180433}
   - {fileID: 900569331}
-  m_Father: {fileID: 2096804816}
+  m_Father: {fileID: 512806773}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &623749106
 GameObject:
@@ -41967,7 +41975,7 @@ GameObject:
   - component: {fileID: 623749110}
   - component: {fileID: 623749109}
   - component: {fileID: 623749108}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Doorframe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42902,7 +42910,7 @@ GameObject:
   - component: {fileID: 636260715}
   - component: {fileID: 636260714}
   - component: {fileID: 636260720}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43275,6 +43283,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 1531983527}
   m_InteractionRadius: 0.7
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: 93af22b2fd64e4caca5d82ae697eff84, type: 2}
@@ -43594,7 +43603,7 @@ GameObject:
   - component: {fileID: 657270503}
   - component: {fileID: 657270505}
   - component: {fileID: 657270504}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Kitchen_Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43779,7 +43788,7 @@ GameObject:
   - component: {fileID: 673104978}
   - component: {fileID: 673104977}
   - component: {fileID: 673104976}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Door Handle B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52789,7 +52798,7 @@ GameObject:
   - component: {fileID: 687080572}
   - component: {fileID: 687080571}
   - component: {fileID: 687080570}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52916,7 +52925,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 693429572}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -52926,7 +52935,7 @@ Transform:
   - {fileID: 1720588814}
   - {fileID: 820118737}
   - {fileID: 1788132060}
-  m_Father: {fileID: 345870481}
+  m_Father: {fileID: 974489598}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &696467332
 Mesh:
@@ -53122,7 +53131,7 @@ GameObject:
   - component: {fileID: 700251339}
   - component: {fileID: 700251338}
   - component: {fileID: 700251344}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Coffee Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53495,6 +53504,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 762734019}
   m_InteractionRadius: 0.7
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: 0f5482ad2dc3a4b63a7492eecf1b413d, type: 2}
@@ -53509,7 +53519,7 @@ GameObject:
   - component: {fileID: 714828824}
   - component: {fileID: 714828826}
   - component: {fileID: 714828825}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bathroom Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53641,7 +53651,7 @@ GameObject:
   - component: {fileID: 718666971}
   - component: {fileID: 718666970}
   - component: {fileID: 718666977}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Dresser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54014,6 +54024,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 1380719170}
   m_InteractionRadius: 0.8
   m_State: 0
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: 7952922acb30c466a84c21e178605860, type: 2}
@@ -54027,7 +54038,7 @@ GameObject:
   m_Component:
   - component: {fileID: 722062683}
   - component: {fileID: 722062684}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Door_Livingroom_FrontYard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54065,6 +54076,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 1216509935}
   m_InteractionRadius: 0.5
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_DoorInteractableData: {fileID: 11400000, guid: c8d7ec444df8d41e3a235879ef3451c3, type: 2}
@@ -54080,7 +54092,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 762734019}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: InteractionZone
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -54744,7 +54756,7 @@ GameObject:
   m_Component:
   - component: {fileID: 777797646}
   - component: {fileID: 777797647}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Door_LivingRoom_Bathroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54782,6 +54794,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 1128869753}
   m_InteractionRadius: 0.5
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_DoorInteractableData: {fileID: 11400000, guid: 7558b4d2cf7b14b65b951051411e9c86, type: 2}
@@ -54975,7 +54988,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 789107438}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Interaction_Zone
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -55013,7 +55026,7 @@ GameObject:
   - component: {fileID: 794411512}
   - component: {fileID: 794411511}
   - component: {fileID: 794411517}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Countertop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55386,6 +55399,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 1909341166}
   m_InteractionRadius: 0.6
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: 99f72ff04772e4c19aa73ee381cb6e01, type: 2}
@@ -57019,7 +57033,7 @@ GameObject:
   - component: {fileID: 860340842}
   - component: {fileID: 860340841}
   - component: {fileID: 860340840}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Door Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65678,7 +65692,7 @@ GameObject:
   - component: {fileID: 860639362}
   - component: {fileID: 860639361}
   - component: {fileID: 860639368}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66051,6 +66065,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 154930896}
   m_InteractionRadius: 0.6
   m_State: 0
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: 68507c639540e4f5f96f4f75544f14e0, type: 2}
@@ -67025,7 +67040,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 901271608}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: 'Interaction_Zone  '
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -67071,7 +67086,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905290899}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -67082,7 +67097,7 @@ Transform:
   - {fileID: 556219036}
   - {fileID: 189667088}
   - {fileID: 1363747728}
-  m_Father: {fileID: 4346133574551591419}
+  m_Father: {fileID: 3603967803325062749}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &911927633
 GameObject:
@@ -67803,7 +67818,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 934635135}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Interaction_Zone
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -67834,7 +67849,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 936110533}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Interaction  Zone B
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -68123,7 +68138,7 @@ GameObject:
   m_Component:
   - component: {fileID: 948438430}
   - component: {fileID: 948438431}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Door_Livingroom_Office
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68161,6 +68176,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 1929077463}
   m_InteractionRadius: 0.5
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_DoorInteractableData: {fileID: 11400000, guid: 076dcef26147e41cab94a54839eb6fa3, type: 2}
@@ -68198,6 +68214,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1607543900}
+  - {fileID: 693429573}
   - {fileID: 345870481}
   - {fileID: 1289313727}
   m_Father: {fileID: 354233426}
@@ -68227,7 +68244,7 @@ GameObject:
   - component: {fileID: 976511654}
   - component: {fileID: 976511656}
   - component: {fileID: 976511655}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Living_Area_Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68513,7 +68530,7 @@ GameObject:
   - component: {fileID: 980325494}
   - component: {fileID: 980325493}
   - component: {fileID: 980325492}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Door Handle A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77274,7 +77291,7 @@ GameObject:
   - component: {fileID: 1001327748}
   - component: {fileID: 1001327747}
   - component: {fileID: 1001327753}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bookshlef
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77647,6 +77664,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 38999735}
   m_InteractionRadius: 0.8
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: 44070d51fa7934eb7807e70a32db329d, type: 2}
@@ -77659,7 +77677,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1011767894}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Interaction_Zone
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -78231,7 +78249,7 @@ GameObject:
   - component: {fileID: 1046028167}
   - component: {fileID: 1046028166}
   - component: {fileID: 1046028172}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 'Desk '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78604,6 +78622,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 530129216}
   m_InteractionRadius: 0.7
   m_State: 0
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: 457544959d67e4e32a7f913e56feab3a, type: 2}
@@ -78616,7 +78635,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1047412539}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Interaction  Zone A
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -79397,7 +79416,7 @@ GameObject:
   - component: {fileID: 1087059907}
   - component: {fileID: 1087059906}
   - component: {fileID: 1087059912}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Stovetop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79770,6 +79789,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 503373611}
   m_InteractionRadius: 0.6
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: c34a0a27cfd1b458aac2667d1bd9c6bc, type: 2}
@@ -80138,7 +80158,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1125411745}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: InteractionZone
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -80169,7 +80189,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1128869753}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Interaction Zone A
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -80202,7 +80222,7 @@ GameObject:
   - component: {fileID: 1130768025}
   - component: {fileID: 1130768027}
   - component: {fileID: 1130768026}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Living_Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80808,7 +80828,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1178114920}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Interaction_Zone
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -80846,7 +80866,7 @@ GameObject:
   - component: {fileID: 1184345367}
   - component: {fileID: 1184345366}
   - component: {fileID: 1184345372}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cardboard Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81219,6 +81239,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 1446593232}
   m_InteractionRadius: 0.5
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: d7d426ca81a0e4bde81bd3f14422c7ca, type: 2}
@@ -81416,7 +81437,7 @@ GameObject:
   - component: {fileID: 1197838016}
   - component: {fileID: 1197838015}
   - component: {fileID: 1197838021}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Deskchair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81789,6 +81810,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 142932401}
   m_InteractionRadius: 0.5
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: 88594132aa9d7430090f0aa9e7f4e3ee, type: 2}
@@ -81979,7 +82001,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1216509935}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Interaction Zone A
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -82017,7 +82039,7 @@ GameObject:
   - component: {fileID: 1224437041}
   - component: {fileID: 1224437040}
   - component: {fileID: 1224437047}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82390,6 +82412,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 1178114920}
   m_InteractionRadius: 1.5
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: 8aa823c5156164b5f90ace215b96bc71, type: 2}
@@ -82587,7 +82610,7 @@ GameObject:
   - component: {fileID: 1227474842}
   - component: {fileID: 1227474841}
   - component: {fileID: 1227474848}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Oven
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82960,6 +82983,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 934635135}
   m_InteractionRadius: 0.7
   m_State: 0
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: a376fc714cf174d78b02780f8a54e287, type: 2}
@@ -83335,7 +83359,7 @@ GameObject:
   - component: {fileID: 1246123101}
   - component: {fileID: 1246123100}
   - component: {fileID: 1246123106}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Random Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84029,6 +84053,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 1925410107}
   m_InteractionRadius: 0.6
   m_State: 0
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: a6d48478659f04859a89d38d5f97c4a3, type: 2}
@@ -84041,7 +84066,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1251763610}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Interaction_Zone
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -84079,7 +84104,7 @@ GameObject:
   - component: {fileID: 1266905762}
   - component: {fileID: 1266905761}
   - component: {fileID: 1266905767}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Recliner_Momma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84452,6 +84477,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 1125411745}
   m_InteractionRadius: 0.9
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: ab957712d85bf4129ad21d4309da2959, type: 2}
@@ -85061,7 +85087,7 @@ GameObject:
   - component: {fileID: 1318936158}
   - component: {fileID: 1318936157}
   - component: {fileID: 1318936156}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85320,7 +85346,7 @@ GameObject:
   - component: {fileID: 1351486566}
   - component: {fileID: 1351486567}
   - component: {fileID: 1351486568}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Toilet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85376,6 +85402,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 1251763610}
   m_InteractionRadius: 0.7
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: 5bb4a8db2b43b4201b0f9eb4208a65bd, type: 2}
@@ -85791,7 +85818,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1371321766}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Interaction_Zone
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -85949,7 +85976,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1380719170}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 'Interaction_Zone '
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -86148,7 +86175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1412404910}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Interaction_Zone
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -86657,7 +86684,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1446593232}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Interaction_Zone
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -86751,7 +86778,7 @@ GameObject:
   - component: {fileID: 1455300956}
   - component: {fileID: 1455300958}
   - component: {fileID: 1455300957}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Fireplace Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86881,7 +86908,7 @@ GameObject:
   - component: {fileID: 1460699981}
   - component: {fileID: 1460699980}
   - component: {fileID: 1460699979}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Toilet Bowl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120976,7 +121003,7 @@ GameObject:
   - component: {fileID: 1471705731}
   - component: {fileID: 1471705730}
   - component: {fileID: 1471705729}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121491,7 +121518,7 @@ GameObject:
   - component: {fileID: 1491379262}
   - component: {fileID: 1491379261}
   - component: {fileID: 1491379267}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cardboard Box (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121864,6 +121891,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 1412404910}
   m_InteractionRadius: 0.5
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: d7d426ca81a0e4bde81bd3f14422c7ca, type: 2}
@@ -122618,7 +122646,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1531983527}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Interaction_Zone
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -122652,7 +122680,7 @@ GameObject:
   - component: {fileID: 1559947706}
   - component: {fileID: 1559947705}
   - component: {fileID: 1559947704}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123151,7 +123179,7 @@ GameObject:
   - component: {fileID: 1580046924}
   - component: {fileID: 1580046923}
   - component: {fileID: 1580046922}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Door Handle B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131981,7 +132009,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1583259333}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Item_Display_Point
   m_TagString: Untagged
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
@@ -132479,7 +132507,7 @@ GameObject:
   - component: {fileID: 1613072749}
   - component: {fileID: 1613072748}
   - component: {fileID: 1613072755}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Nightstand_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132852,6 +132880,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 138465147}
   m_InteractionRadius: 0.6
   m_State: 0
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: b893bf757e7e3468dbfcc09cbb8dc299, type: 2}
@@ -132866,7 +132895,7 @@ GameObject:
   - component: {fileID: 1621493522}
   - component: {fileID: 1621493524}
   - component: {fileID: 1621493523}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Kitchen_Area_Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133147,7 +133176,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1634667344}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Interaction_Zone
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -133356,7 +133385,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1653113572}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Interaction_Zone
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -133786,7 +133815,7 @@ GameObject:
   - component: {fileID: 1681068358}
   - component: {fileID: 1681068357}
   - component: {fileID: 1681068363}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Recliner_Dad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134159,6 +134188,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 1929442203}
   m_InteractionRadius: 0.9
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: 946884aa8f9874feca7586b52b78e631, type: 2}
@@ -134459,7 +134489,7 @@ GameObject:
   - component: {fileID: 1717259282}
   - component: {fileID: 1717259281}
   - component: {fileID: 1717259280}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Door Handle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144290,7 +144320,7 @@ GameObject:
   - component: {fileID: 1748555475}
   - component: {fileID: 1748555474}
   - component: {fileID: 1748555480}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Dresser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144663,6 +144693,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 1653113572}
   m_InteractionRadius: 0.55
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: a55c2c10de9c5497ba17b2b2ec31b1c0, type: 2}
@@ -144853,7 +144884,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1767838412}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: 'Interaction  Zone '
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -144889,7 +144920,7 @@ GameObject:
   - component: {fileID: 1772712844}
   - component: {fileID: 1772712843}
   - component: {fileID: 1772712842}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Door Handle B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154293,7 +154324,7 @@ GameObject:
   - component: {fileID: 1790907378}
   - component: {fileID: 1790907377}
   - component: {fileID: 1790907384}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Shower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154666,6 +154697,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 1011767894}
   m_InteractionRadius: 0.9
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: 72793547f80c746ce8ffe21ea6b227fa, type: 2}
@@ -154685,7 +154717,7 @@ GameObject:
   - component: {fileID: 1792473894}
   - component: {fileID: 1792473893}
   - component: {fileID: 1792473899}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Bookshelf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155058,6 +155090,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 901271608}
   m_InteractionRadius: 0.8
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: 81913aac69ef045bdb765994cfa4972f, type: 2}
@@ -155426,7 +155459,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1820226064}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: 'Interaction_Zone '
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -155458,7 +155491,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1825435062}
   - component: {fileID: 1825435063}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Door_LivingRoom_Backyard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155496,6 +155529,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 159334888}
   m_InteractionRadius: 0.5
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_DoorInteractableData: {fileID: 11400000, guid: 00e4eec73dc0641ee8ad36b1c2cc6558, type: 2}
@@ -155871,7 +155905,7 @@ GameObject:
   - component: {fileID: 1885112727}
   - component: {fileID: 1885112726}
   - component: {fileID: 1885112725}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Doorframe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156977,7 +157011,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1909341166}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Interaction_Zone
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -157186,7 +157220,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1925410107}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Interaction_Zone
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -157217,7 +157251,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1929077463}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Interaction Zone A
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -157248,7 +157282,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1929442203}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: 'Interaction  Zone  '
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -157279,7 +157313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1932542023}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 'Interaction_Zone '
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -157670,7 +157704,7 @@ GameObject:
   - component: {fileID: 1946020934}
   - component: {fileID: 1946020933}
   - component: {fileID: 1946020932}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Light Fixture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -158024,7 +158058,7 @@ GameObject:
   - component: {fileID: 1950688614}
   - component: {fileID: 1950688613}
   - component: {fileID: 1950688612}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -158820,7 +158854,7 @@ GameObject:
   - component: {fileID: 1996290195}
   - component: {fileID: 1996290194}
   - component: {fileID: 1996290200}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Couch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -159193,6 +159227,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 1767838412}
   m_InteractionRadius: 0.9
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: 96272833665224c5ea0a175466f1718e, type: 2}
@@ -159247,7 +159282,7 @@ GameObject:
   - component: {fileID: 2000666835}
   - component: {fileID: 2000666834}
   - component: {fileID: 2000666840}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Deskchair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -159620,6 +159655,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 558069925}
   m_InteractionRadius: 0.6
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: 88594132aa9d7430090f0aa9e7f4e3ee, type: 2}
@@ -159639,7 +159675,7 @@ GameObject:
   - component: {fileID: 2006586970}
   - component: {fileID: 2006586969}
   - component: {fileID: 2006586975}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Fireplace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160013,6 +160049,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 405644590}
   m_InteractionRadius: 0.7
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: aeaee154d0f08475384ab48f7a923225, type: 2}
@@ -160025,7 +160062,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2011235477}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Interaction_Zone
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -160271,7 +160308,7 @@ GameObject:
   - component: {fileID: 2041226955}
   - component: {fileID: 2041226954}
   - component: {fileID: 2041226953}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Door Handle B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168931,7 +168968,7 @@ GameObject:
   - component: {fileID: 2046143186}
   - component: {fileID: 2046143192}
   - component: {fileID: 2046143193}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169305,6 +169342,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 2011235477}
   m_InteractionRadius: 0.9
   m_State: 1
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: 3e995a9c2513a4aedbe86d655c81e972, type: 2}
@@ -169772,7 +169810,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2096804816}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169792,7 +169830,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 620712228}
   - {fileID: 1999019590}
   m_Father: {fileID: 512806773}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -169812,7 +169849,7 @@ GameObject:
   - component: {fileID: 2107829566}
   - component: {fileID: 2107829565}
   - component: {fileID: 2107829572}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Nightstand_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170185,6 +170222,7 @@ MonoBehaviour:
   m_InteractionZone: {fileID: 1932542023}
   m_InteractionRadius: 0.6
   m_State: 0
+  m_KeyItem: {fileID: 0}
   m_LockedInteractionTextList: []
   m_UnlockedInteractionTextList: []
   m_EnvInteractableData: {fileID: 11400000, guid: 5a5eab9c3bfca4e2d8c3b11f55c219e2, type: 2}
@@ -171016,8 +171054,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7472649834280304289}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.19555603, y: -0.67300785, z: 0.19154032, w: 0.68711764}
-  m_LocalPosition: {x: 7.216497, y: 4.0791554, z: -2.4666286}
+  m_LocalRotation: {x: 0.07982431, y: -0.6953519, z: 0.07818513, w: 0.70993024}
+  m_LocalPosition: {x: 7.216497, y: 1.5, z: -2.4666286}
   m_LocalScale: {x: 9.869032, y: 0.598029, z: 0.13649058}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -171037,6 +171075,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2619074845504215499}
+  - {fileID: 905290900}
   - {fileID: 4346133574551591419}
   - {fileID: 1079971106}
   m_Father: {fileID: 354233426}
@@ -171068,7 +171107,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 905290900}
   - {fileID: 1482793451}
   m_Father: {fileID: 3603967803325062749}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -171146,7 +171184,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5575052141919436370}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Interaction  Zone B
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -171249,7 +171287,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4622449902162186547, guid: cfe264c3242fc4272a6c447afe837ed8, type: 3}
       propertyPath: m_ClickableLayerMask.m_Bits
-      value: 8
+      value: 136
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622449902162186547, guid: cfe264c3242fc4272a6c447afe837ed8, type: 3}
+      propertyPath: m_InteractableLayerMask.m_Bits
+      value: 128
       objectReference: {fileID: 0}
     - target: {fileID: 5385558829275610178, guid: cfe264c3242fc4272a6c447afe837ed8, type: 3}
       propertyPath: m_Enabled
@@ -171355,7 +171397,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4346133574551591419}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Room
   m_TagString: Untagged
   m_Icon: {fileID: 0}

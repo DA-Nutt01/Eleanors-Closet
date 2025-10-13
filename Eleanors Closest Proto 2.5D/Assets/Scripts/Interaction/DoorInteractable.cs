@@ -18,7 +18,7 @@ public class DoorInteractable : BaseInteractable
 
     protected override void Awake()
     {
-        m_BaseInteractableData = m_DoorInteractableData;
+        m_Data = m_DoorInteractableData;
         m_RoomA = m_DoorInteractableData.roomA;
         m_RoomB = m_DoorInteractableData.roomB;
 
@@ -49,13 +49,10 @@ public class DoorInteractable : BaseInteractable
         switch (m_State)
         {
             case InteractableState.Locked:
-                foreach (string text in m_LockedInteractionTextList)
-                {
-                    // Tell Input Manager to Switch Input Action to UI, As locked UI will now be displayed
-                    InputManager.Instance.SwitchInputContext(InputContext.UIInteraction);
-                    // Tell UI Interaction Text Controller to display lock text list
-                    UIInteractionTextController.Instance.ShowLines(m_LockedInteractionTextList);
-                }
+                // Tell Input Manager to Switch Input Action to UI, As locked UI will now be displayed
+                InputManager.Instance.SwitchInputContext(InputContext.UIInteraction);
+                // Tell UI Interaction Text Controller to display lock text list
+                UIInteractionTextController.Instance.ShowLines(m_LockedInteractionTextList);
                 break;
             case InteractableState.Unlocked:
                 TryEnterRoom();

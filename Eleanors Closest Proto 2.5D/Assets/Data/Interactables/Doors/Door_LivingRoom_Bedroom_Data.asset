@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 152a056e2fac2465f8b1ef42be9d1805, type: 3}
   m_Name: Door_LivingRoom_Bedroom_Data
   m_EditorClassIdentifier: Assembly-CSharp::DoorInteractableData
-  interactionText: Mom and Dad's room...
-  type: 2
-  state: 1
+  interactableName: Bedroom Door
+  type: 1
+  state: 0
+  keyItem: {fileID: 11400000, guid: 738b91279d6ff4ff3897960cadadbea3, type: 2}
+  lockedInteractionTextList:
+  - Locked
+  unlockedInteractionTextList: []
   roomA: 1
   roomB: 4

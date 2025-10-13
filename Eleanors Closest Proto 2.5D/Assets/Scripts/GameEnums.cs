@@ -34,4 +34,10 @@ namespace EC
         Key,
         Consumeable
     }
+
+    public enum ClickType
+    {
+        LeftClick,
+        RightClick,
+    }
 }

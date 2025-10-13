@@ -11,7 +11,7 @@ public class EnvironmentalInteractable : BaseInteractable
 
     protected override void Awake()
     {
-        m_BaseInteractableData = m_EnvInteractableData;
+        m_Data = m_EnvInteractableData;
         m_ItemStorageComponent = GetComponent<ItemStorage>();
         base.Awake();
     }
